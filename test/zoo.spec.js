@@ -1,4 +1,3 @@
-// zoo_spec.js
 import { expect } from 'chai';
 import { Dog, Wolf } from '../src/zoo';
 
