@@ -1,0 +1,33 @@
+{
+  "name": "lazy-load-webpack-systemjs",
+  "version": "1.0.0",
+  "description": "Lazy-loading ES2015 modules in the browser with Webpack, Babel and System.js ",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagorg/lazy-load-webpack-systemjs.git"
+  },
+  "author": "Tiago Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagorg/lazy-load-webpack-systemjs/issues"
+  },
+  "homepage": "https://github.com/tiagorg/lazy-load-webpack-systemjs#readme",
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.3.4",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
