@@ -1,16 +1,19 @@
-import { Dog, Wolf } from './zoo';
+import Cat from './cat.js';
 
-var contentNode = document.getElementById('content');
+let contentNode = document.getElementById('content');
 
-var myDog = new Dog('Sherlock', 'beagle');
-contentNode.innerHTML += myDog.bark();
+let myCat = new Cat('Bugsy');
+contentNode.innerHTML += myCat.meow();
 
-var myWolf = new Wolf('Direwolf');
-contentNode.innerHTML += `<br/>${myWolf.bark()}`;
+contentNode.innerHTML += `<p><button id='loadZoo'>Lazy load <b>Zoo</b></button></p>`;
 
-document.getElementById('loadCat').addEventListener('click', e => {
-  System.import('./cat').then(Cat => {
-    var myCat = new Cat('Bugsy');
-    contentNode.innerHTML += `<br/>${myCat.meow()}`;
+document.getElementById('loadZoo').addEventListener('click', e => {
+  System.import('./src/zoo.js').then(Zoo => {
+
+	let myDog = new Zoo.Dog('Sherlock', 'beagle');
+	contentNode.innerHTML += `${myDog.bark()}`;
+
+	let myWolf = new Zoo.Wolf('Direwolf');
+	contentNode.innerHTML += `<br/>${myWolf.bark()}`;
   });
 });
