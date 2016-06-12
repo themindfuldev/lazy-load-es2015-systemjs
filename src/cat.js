@@ -1,5 +1,5 @@
 export default class Cat {
-  constructor(name) {
+  constructor( name ) {
     this.name = name;
   }
 
