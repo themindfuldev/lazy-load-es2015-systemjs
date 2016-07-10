@@ -1,5 +1,5 @@
 // Importing Cat module synchronously
-import Cat from 'cat';
+import Cat from './cat';
 
 // DOM content node
 let contentNode = document.getElementById( 'content' );
@@ -15,7 +15,7 @@ contentNode.innerHTML += `<p><button id='loadZoo'>Lazy load <b>Zoo</b></button><
 document.getElementById( 'loadZoo' ).addEventListener( 'click', e => {
 
   // Importing Zoo module asynchronously
-  System.import( 'zoo' ).then( Zoo => {
+  System.import( 'src/zoo' ).then( Zoo => {
 
     // Rendering dog
     let myDog = new Zoo.Dog( 'Sherlock', 'beagle' );

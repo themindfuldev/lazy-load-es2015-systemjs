@@ -13,6 +13,9 @@ gulp.task('test', function() {
     });
 });
 
+//jspm bundle-sfx src/main.js target/main.bundle.js
+//jspm bundle src/zoo.js target/1.bundle.js --inject
+
 gulp.task('connect', ['test'], function() {
   connect.server({
     root: '.'

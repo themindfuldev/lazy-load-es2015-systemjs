@@ -1,5 +1,4 @@
 System.config({
-  baseURL: "/src",
   defaultJSExtensions: true,
   transpiler: "babel",
   babelOptions: {
@@ -9,9 +8,18 @@ System.config({
     ]
   },
   paths: {
-    "*": "*.js",
     "github:*": "../jspm_packages/github/*",
     "npm:*": "../jspm_packages/npm/*"
+  },
+  bundles: {
+    "target/1.bundle.js": [
+      "src/zoo.js",
+      "npm:babel-runtime@5.8.34/helpers/class-call-check",
+      "npm:babel-runtime@5.8.34/helpers/create-class",
+      "npm:babel-runtime@5.8.34/core-js/object/define-property",
+      "npm:core-js@1.2.6/library/fn/object/define-property",
+      "npm:core-js@1.2.6/library/modules/$"
+    ]
   },
 
   map: {
