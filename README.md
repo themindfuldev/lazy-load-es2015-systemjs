@@ -1,5 +1,5 @@
 # lazy-load-es2015-systemjs
-Lazy-loading ES2015 modules in the browser with System.js and Babel
+Lazy-loading ES2015 modules in the browser with JSPM, Babel and System.js
 
 # Usage
 ```

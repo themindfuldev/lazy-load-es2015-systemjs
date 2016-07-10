@@ -1,7 +1,7 @@
 {
   "name": "lazy-load-es2015-systemjs",
   "version": "1.0.0",
-  "description": "Lazy-loading ES2015 modules in the browser with Webpack, Babel and System.js ",
+  "description": "Lazy-loading ES2015 modules in the browser with JSPM, Babel and System.js ",
   "main": "src/main.js",
   "scripts": {
     "build": "gulp",
