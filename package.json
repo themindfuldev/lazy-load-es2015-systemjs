@@ -4,8 +4,9 @@
   "description": "Lazy-loading ES2015 modules in the browser with JSPM, Babel and System.js ",
   "main": "src/main.js",
   "scripts": {
-    "build": "gulp",
-    "test": "gulp test"
+    "build": "jspm bundle-sfx src/main.js target/main.bundle.js && jspm bundle src/zoo.js target/1.bundle.js --inject",
+    "test": "gulp test",
+    "start": "gulp connect"
   },
   "repository": {
     "type": "git",

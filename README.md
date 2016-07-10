@@ -5,5 +5,7 @@ Lazy-loading ES2015 modules in the browser with JSPM, Babel and System.js
 ```
 npm install
 jspm install
-gulp
+npm run build
+npm test
+npm run start
 ```
